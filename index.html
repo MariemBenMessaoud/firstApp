@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    
+    <input type="number" id="a" name="a">
+<input type="number" id="b" name="b">
+<h3 id ="result"></h3>
+<button class="button" onclick="showSomme()">somme</button>
+<script>
+     function showSomme(){
+          
+    var a = parseFloat(document.getElementById('a').value);
+    var b =parseFloat( document.getElementById('b').value
+);
+    var sum = a + b;
+
+    document.getElementById('result').textContent = `La somme est :  ${sum} ` ;
+}
+</script>
+</body>
+
